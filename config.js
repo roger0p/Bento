@@ -22,10 +22,10 @@ const CONFIG = {
 	twelveHourFormat: false,
 
 	// Greetings
-	greetingMorning: 'Good morning!' + day,
-	greetingAfternoon: 'Good afternoon,' + day,
-	greetingEvening: 'Good evening,' + day,
-	greetingNight: 'Go to Sleep!' + day,
+	greetingMorning:   'Good ' + day + 'morning, ',
+	greetingAfternoon: 'Good ' + day + 'afternoon, ',
+	greetingEvening:   'Good ' + day + 'evening, ',
+	greetingNight:     'Good ' + day + 'night, ',
 
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
@@ -37,8 +37,8 @@ const CONFIG = {
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
 	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-	defaultLatitude: '37.775',
-	defaultLongitude: '-122.419',
+	defaultLatitude: '24.999752',  
+	defaultLongitude: '121.555921',
 
 	// Autochange
 	autoChangeTheme: true,
