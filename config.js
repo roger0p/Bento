@@ -5,11 +5,16 @@
 // │  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││
 // └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
 
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const d = new Date();
+let day = weekday[d.getDay()];
+
 const CONFIG = {
 	// ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
 	// ├┴┐├─┤└─┐││  └─┐
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
+	
 	// General
 	name: 'Roderick',
 	imageBackground: false,
@@ -17,10 +22,10 @@ const CONFIG = {
 	twelveHourFormat: false,
 
 	// Greetings
-	greetingMorning: 'Good morning!',
-	greetingAfternoon: 'Good afternoon,',
-	greetingEvening: 'Good evening,',
-	greetingNight: 'Go to Sleep!',
+	greetingMorning: 'Good morning!' + day,
+	greetingAfternoon: 'Good afternoon,' + day,
+	greetingEvening: 'Good evening,' + day,
+	greetingNight: 'Go to Sleep!' + day,
 
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
